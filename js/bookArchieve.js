@@ -7,8 +7,8 @@ const searchBook = () => {
         document.getElementById('no-of-result').innerHTML = `<h3>Please Write Something</h3>`;
     }
     else {
-        document.getElementById('no-of-result').innerHTML='';
-        document.getElementById('search-result').innerHTML='';
+        document.getElementById('no-of-result').innerHTML = '';
+        document.getElementById('search-result').innerHTML = '';
         //creating dynamic url
         const url = `https://openlibrary.org/search.json?q=${searchText}`;
         fetch(url)
